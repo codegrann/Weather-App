@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Montserrat, "Roboto", sans-serif;
   background: #f2f2f2;
   color: #333;
   font-size: 16px;
@@ -35,6 +35,9 @@ body {
 }
 #title {
   color: rgb(10, 10, 2);
+}
+#temperature {
+  font-family: Yellowtail;
 }
 h1,
 h2 {
