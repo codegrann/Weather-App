@@ -67,9 +67,30 @@ tr {
 td {
   display: block;
   text-align: right;
+  border: 2px solid red;
 }
 
 th {
   text-align: left;
   display: block;
+  border: 2px solid red;
+}
+
+@media (max-width: 350px) {
+  .container {
+    /* background-color: red; */
+    /* width: 100vw; */
+    padding-inline: 2rem;
+    padding-block: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  th,
+  td {
+    /* word-break: break-all; */
+    font-size: 10pt;
+  }
+  th {
+    width: 150px;
+  }
 }
