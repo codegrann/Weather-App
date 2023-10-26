@@ -13,6 +13,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgSqNkYkjZW5uyC650weQn8YyMdXgS2FM&callback=initMap"
+      async
+      defer
+    ></script>
   </head>
   <body onload="loadSite()">
     <div class="container">
@@ -50,6 +55,16 @@
         </table>
       </div>
     </div>
+
+    <div id="map" style="height: 400px; width: 100%"></div>
+    <script>
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 37.7749, lng: -122.4194 }, // Set the initial map center
+          zoom: 8, // Set the initial zoom level
+        });
+      }
+    </script>
 
     <script type="text/javascript" src="script.js" defer></script>
   </body>
