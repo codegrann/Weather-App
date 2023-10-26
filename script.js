@@ -57,3 +57,11 @@ function getWeather() {
       ).toLocaleTimeString();
     });
 }
+
+// INITIALIZING MAPS
+function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -1.0966, lng: 37.0123 }, // Set the initial map center
+    zoom: 12, // Set the initial zoom level
+  });
+}
